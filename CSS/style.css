@@ -1,0 +1,11 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-header{
+    background-color: rgba(0, 0, 0,.3);
+    background-image: url(../images\Banner top.jpg);
+    background-size: cover;
+    padding-bottom: 50px;
+}
