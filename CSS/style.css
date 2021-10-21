@@ -1,11 +1,211 @@
 html, body{
+    margin: auto;
+    padding: 0 ;
+    max-width: 1500px;
+}
+.max{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.navbar{
+    background: darkblue;
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+}
+
+.navbar .max{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+
+.navbar a{
+  text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color:rgba(119, 119, 119, 0.5)
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nav_item{
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+text-align: left;
+}
+
+.nav-link{
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: rgb(0, 0, 0);
+}
+
+.home{
+    display: flex;
+    background-color: rgb(36, 28, 25);
+    height: 100vh;
+    color: white;
+    width: 1500px;
+    min-height: 400px;
+}
+
+.home .max{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.img-about{
+    display: flex;
+    text-align: right;
+    height: 400px;
+    width: 300px;
+    margin: 25px;
+    position:static;
+    background-blend-mode:cover
+}
+
+#welcome-section{
+    background-image: url(../images/Banner\ top\ black.png);
+    height: 800px;
+    width: 1500px;
+    text-align: center;
+    position: static;
     margin: 0;
     padding: 0;
 }
 
-.main-header{
-    background-color: rgba(0, 0, 0,.3);
-    background-image: url(../images\Banner top.jpg);
-    background-size: cover;
-    padding-bottom: 50px;
+.section-title{
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    margin: 0;
 }
+
+.about-me{
+    text-align: center;
+    display: inline;
+    font-size: 2,5em;
+    background-color: rgb(36, 28, 25);
+    height: 100vh;
+    color: black;
+    width: 1500px;
+    min-height: 400px;
+}
+
+.f-logo{
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-size: 3em;
+}
+
+.main-footer{
+    background-color: darkblue;
+    padding: .20em 0;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav{
+    padding: 0 .5em;
+}
+
+.section-content{
+    margin: 1em; /*top right bottom and left */
+}
+
+.section-header{
+    font-size: 2em;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.nav li{
+    display: inline;
+}
+
+.my-work{
+    text-align: center;
+}
+
+.projects-header{
+    margin-bottom: 2em;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
