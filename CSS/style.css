@@ -1,19 +1,31 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}
+
 html, body{
     margin: auto;
     padding: 0 ;
-    max-width: 1500px;
 }
 .max{
-    max-width: 1300px;
     padding: 0 10px;
     margin: auto;
 }
 
+.img-home{
+    display: flex;
+    text-align: right;
+    height: 400px;
+    width: 300px;
+    margin: 25px;
+    object-fit: cover;
+    border-radius: 6px;
+    background-blend-mode:cover
+}
+
 .navbar{
     background: darkblue;
+    z-index: 999;
+    position: fixed;
     width: 100%;
     padding: 15px 0;
-    position: fixed;
 }
 
 .navbar .max{
@@ -39,7 +51,6 @@ html, body{
     font-weight: 500;
     margin-left: 25px;
 }
-
 
 .navbar a{
   text-decoration: none;
@@ -74,13 +85,25 @@ text-align: left;
     color: rgb(0, 0, 0);
 }
 
+/* Home Section*/
 .home{
     display: flex;
-    background-color: rgb(36, 28, 25);
     height: 100vh;
     color: white;
-    width: 1500px;
     min-height: 400px;
+}
+
+#welcome-section{
+    display: flex;
+    background: url("images\Banner top black 5.png") no-repeat center;
+    background-color: rgb(36, 28, 25);
+}
+#h1{
+    font-size: 75px;
+    font-weight: 600px;
+    margin: -3px;
+    color: white;
+    text-align: center;
 }
 
 .home .max{
@@ -102,49 +125,64 @@ text-align: left;
     margin: 5px 0;
 }
 
-.img-about{
-    display: flex;
-    text-align: right;
-    height: 400px;
-    width: 300px;
-    margin: 25px;
-    position:static;
-    background-blend-mode:cover
+/* about section */
+
+.about{
+    font-family: 'Times New Roman', Times, serif;
+    background: #111;
 }
 
-#welcome-section{
-    background-image: url(../images/Banner\ top\ black.png);
-    height: 800px;
-    width: 1500px;
+.about .title{
     text-align: center;
-    position: static;
-    margin: 0;
-    padding: 0;
-}
-
-.section-title{
-    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
     color: white;
-    font-size: 5em;
-    margin: 0;
 }
 
-.about-me{
-    text-align: center;
-    display: inline;
-    font-size: 2,5em;
-    background-color: rgb(36, 28, 25);
-    height: 100vh;
-    color: black;
-    width: 1500px;
-    min-height: 400px;
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
 }
 
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img{
+    height: 400px;
+    width: 550px;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 25px 10px;
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
+
+
+/* Footer*/
 .f-logo{
     text-align: center;
     margin: 0;
     color: white;
     font-size: 3em;
+    text-decoration: none;
 }
 
 .main-footer{
@@ -153,7 +191,7 @@ text-align: left;
 }
 
 .container{
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5em;
 }
@@ -194,18 +232,42 @@ text-align: left;
 
 .my-work{
     text-align: center;
+    background: rgb(36, 28, 25);
+    color: white;
 }
 
 .projects-header{
+    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 2em;
+    background: rgb(36, 28, 25);
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
+.Lorem{
+    font-family: 'Times New Roman', Times, serif;
+    column-count: 3;
+    column-gap: 40px;
+}
 .projects{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    background-color: rgb(36, 28, 25);
 }
 
 html{
     scroll-behavior: smooth;
 }
 
+/* Media Queries*/
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+.about .about-content .column{
+    width: 50%;
+}
