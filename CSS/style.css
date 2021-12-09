@@ -15,14 +15,11 @@ html, body{
     height: 400px;
     width: 300px;
     margin: 25px;
-    object-fit: cover;
     border-radius: 6px;
-    background-blend-mode:cover
 }
 
 .navbar{
-    background: darkblue;
-    z-index: 999;
+    background: crimson;
     position: fixed;
     width: 100%;
     padding: 15px 0;
@@ -186,7 +183,7 @@ text-align: left;
 }
 
 .main-footer{
-    background-color: darkblue;
+    background-color: crimson;
     padding: .20em 0;
 }
 
@@ -252,6 +249,7 @@ text-align: left;
 }
 .projects{
     display: grid;
+    column-count: 3;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     background-color: rgb(36, 28, 25);
 }
